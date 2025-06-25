@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault();
     setError('');
     try {
-      const res = await fetch('http://localhost:4000/users/login', {
+      const res = await fetch('https://blogging-platform-h1j2.onrender.com/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })

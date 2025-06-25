@@ -7,7 +7,7 @@ function Dashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:4000/blogs')
+    fetch('https://blogging-platform-h1j2.onrender.com/blogs')
       .then(res => res.json())
       .then(data => {
         setBlogs(data);

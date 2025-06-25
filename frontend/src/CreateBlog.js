@@ -13,7 +13,7 @@ function CreateBlog() {
     setError('');
     try {
       const token = localStorage.getItem('token');
-      const res = await fetch('http://localhost:4000/blogs', {
+      const res = await fetch('https://blogging-platform-h1j2.onrender.com/blogs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

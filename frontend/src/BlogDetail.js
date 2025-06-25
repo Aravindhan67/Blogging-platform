@@ -9,7 +9,7 @@ function BlogDetail() {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
-    fetch(`http://localhost:4000/blogs/${id}`, {
+    fetch(`https://blogging-platform-h1j2.onrender.com/blogs/${id}`, {
       headers: token ? { 'Authorization': `Bearer ${token}` } : {}
     })
       .then(res => res.json().then(data => ({ ok: res.ok, data })))
