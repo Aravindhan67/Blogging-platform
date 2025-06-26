@@ -15,7 +15,7 @@ function Signup() {
     setError('');
     setSuccess('');
     try {
-      const res = await fetch('https://blogging-platform-h1j2.onrender.com/signup', {
+      const res = await fetch('https://blogging-platform-h1j2.onrender.com/users/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, email, password })
